@@ -86,14 +86,10 @@ document.getElementsByClassName("bookDiv")[indexOfClass].appendChild(remove);
   for(let i = 0; i < myLibrary.length; i++){
     if(titleText === myLibrary[i].title){
       myLibrary.splice(i, 1);
-     bookTitle.remove();
-     bookAuthor.remove();
-     bookPages.remove();
-     complete.remove();
-     remove.remove();
+      document.getElementsByClassName("bookDiv")[i].remove();
     }
   }
  });
 }
-console.log(document.getElementById("books"));
-console.log(myLibrary);
+//console.log(document.getElementById("books"));
+//console.log(myLibrary);
